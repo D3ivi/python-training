@@ -523,6 +523,32 @@ To sort lists we can use _sort()_ method or _sorted()_ built-in functions. The _
   fruits = sorted(fruits,reverse=True)
   print(fruits)     # ['orange', 'mango', 'lemon', 'banana']
   ```
+  sum(): returns the sum of all elements in the list
+   **Syntax:**
+  sum(iterable, start)  
+  iterable : iterable can be anything list , tuples or dictionaries ,
+  but most importantly it should be numbers.
+  start : this start is added to the sum of 
+  numbers in the iterable. 
+  If start is not given in the syntax , it is assumed to be 0.
+  Possible two syntaxes:
+  sum(a)
+  a is the list , it adds up all the numbers in the 
+  list a and takes start to be 0, so returning 
+  only the sum of the numbers in the list.
+  sum(a, start)
+  this returns the sum of the list + start 
+  **Examples:**
+  ```
+  numbers = [1,2,3,4,5,1,4,5]
+  print(sum(numbers))  # 25
+  print(sum(numbers, 10))  # 35
+  
+  arr = ["a"]
+  print(sum(arr)) # Runtime Error, because there is at least one element other than int
+  print(sum(arr, 10)) # TypeError: unsupported operand type(s) for +: 'int' and 'str'
+  ```
+
 
 🌕 You are diligent and you have already achieved quite a lot. You have just completed day 5 challenges and you are 5 steps a head in to your way to greatness. Now do some exercises for your brain and muscles.
 
