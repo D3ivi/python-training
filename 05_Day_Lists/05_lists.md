@@ -378,6 +378,17 @@ fruits_copy = fruits.copy()
 print(fruits_copy)       # ['banana', 'orange', 'mango', 'lemon']
 ```
 
+### Converting all str into int inside a list (all emements must be valid numbers)
+
+We are using the eval() function and a loop. Don't forget the []!
+
+```py
+# syntax
+lst = ['1', '2', '3']
+int_lst = [eval(i) for i in lst]
+#the result will be: int_lst = [1, 2, 3]
+```
+
 ### Joining Lists
 
 There are several ways to join, or concatenate, two or more lists in Python.
